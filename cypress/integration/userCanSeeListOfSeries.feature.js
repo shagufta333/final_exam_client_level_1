@@ -4,6 +4,6 @@ describe('vistor can see list of TV series', () => {
     cy.visit('/')
   });
  it('is expected to display list of tv series', () => {
-   cy.get('[data-cy=series_list]').should('have.length', 10);
+   cy.get('[data-cy=series-list]').should('have.length', 10);
  });
 })
