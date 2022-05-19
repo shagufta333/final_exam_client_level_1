@@ -8,13 +8,16 @@ const SeriesList = () => {
     const response = await axios.get(
       "https://content.viaplay.se/pc-se/serier/samtliga"
     );
-    setSeries(response.data.results);
+  debugger;
+    setSeries(
+      response.data._embedded["viaplay:blocks"][0]._embedded["viaplay:products"]
+    );
   };
 
   const seriesList = series.map((serie) => {
     return (
-      <li key={serie}>
-        <h3>{}</h3>
+      <li key={serie.publicPath}>
+        <h3>{serie.publicPath}</h3>
       </li>
     );
   });

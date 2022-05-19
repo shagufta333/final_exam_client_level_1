@@ -34,7 +34,7 @@
     "viaplay:socket2": {
       "id": "socket",
       "href": "https://socket2.viaplay.se/"
-      },
+    },
     "viaplay:search": {
       "title": "Sök",
       "href": "https://content.viaplay.se/pc-se/search{?query}",
@@ -68,6 +68,51 @@
     "viaplay:technotifier": {
       "id": "technotifier",
       "href": "https://viaplay.mtg-api.com/tech-notifications/v1/viaplay/sv-se/pc"
-    }
+    },
+    "viaplay:sections": [
+      {
+        "id": "35bb8a90-d40e-11e2-8b8b-0800200c9a66",
+        "title": "Serier",
+        "href": "https://content.viaplay.se/pc-se/serier",
+        "type": "vod",
+        "name": "series",
+        "active": true
+      },
+      {
+        "id": "2037b330-d411-11e2-8b8b-0800200c9a66",
+        "title": "Film",
+        "href": "https://content.viaplay.se/pc-se/film",
+        "type": "vod",
+        "name": "movie"
+      },
+      {
+        "id": "8e5febf0-d4e0-11e2-8b8b-0800200c9a66",
+        "title": "Sport",
+        "href": "https://content.viaplay.se/pc-se/sport",
+        "type": "sportPerDay",
+        "name": "sport"
+      },
+      {
+        "id": "1a6a2ec0-d4e2-11e2-8b8b-0800200c9a66",
+        "title": "Barn",
+        "href": "https://content.viaplay.se/pc-se/barn",
+        "type": "children",
+        "name": "kids"
+      },
+      {
+        "id": "85561ec0-d4e1-11e2-8b8b-0800200c9a66",
+        "title": "Hyr & köp",
+        "href": "https://content.viaplay.se/pc-se/store",
+        "type": "vod",
+        "name": "rental"
+      },
+      {
+        "id": "b35d0a33-ec9d-4e4c-9846-92addb9ec00d",
+        "title": "Prova Viaplay",
+        "href": "https://content.viaplay.se/pc-se/package",
+        "type": "editorial",
+        "name": "b35d0a33-ec9d-4e4c-9846-92addb9ec00d"
+      }
+    ]
   }
 }
