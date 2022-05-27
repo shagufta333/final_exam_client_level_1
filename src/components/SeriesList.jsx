@@ -17,6 +17,7 @@ const SeriesList = () => {
     return (
       <li key={serie.publicPath}>
         <h3>{serie.publicPath}</h3>
+        <img src={serie.content.images.boxart.url} alt="" />
       </li>
     );
   });
