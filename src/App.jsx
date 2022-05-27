@@ -1,14 +1,8 @@
-import React from 'react'
-import SeriesList from './components/SeriesList'
-
+import React from "react";
+import SeriesList from "./components/SeriesList";
 
 const App = () => {
-  return (
-    <div>
-      <SeriesList />
-    </div>
-  )
-}
+  return <SeriesList />;
+};
 
-export default App
-
+export default App;
