@@ -8,7 +8,6 @@ const SeriesList = () => {
     const response = await axios.get(
       "https://content.viaplay.se/pc-se/serier/samtliga"
     );
-
     setSeries(
       response.data._embedded["viaplay:blocks"][0]._embedded["viaplay:products"]
     );

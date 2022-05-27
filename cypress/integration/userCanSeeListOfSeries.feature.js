@@ -1,6 +1,6 @@
 describe("vistor can see list of TV series", () => {
   beforeEach(() => {
-    cy.intercept("GET", "**api/series", {
+    cy.intercept("GET", "**/serier/**", {
       fixture: "viaplay_response.json",
     });
     cy.visit("/");
@@ -12,12 +12,12 @@ describe("vistor can see list of TV series", () => {
     cy.get("[data-cy=series-list]")
       .children()
       .eq(0)
-      .should("contain.text", "maskineriet");
+      .should("contain.text", "greys-anatomy");
   });
   it("is expected to show last tv show name", () => {
     cy.get("[data-cy=series-list]")
       .children()
       .eq(9)
-      .should("contain.text", "new-amsterdam");
+      .should("contain.text", "s.w.a.t.");
   });
 });
